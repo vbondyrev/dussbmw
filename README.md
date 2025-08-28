@@ -1,6 +1,6 @@
 # Analytisch project voor niet-commerciële doeleinden uitgevoerd uitsluitend met open source data (Licentie CC 1.0, CC BY 4.0)
 
-    Analytical project for non-commercial purposes conducted exclusively using open source data (License CC 1.0, CC BY 4.0)
+    Analytical project for non-commercial purposes conducted exclusively using open- source data (License CC 1.0, CC BY 4.0)
 
 
 ## Business Request
@@ -31,8 +31,14 @@ De basis zal gebruikmaken van Azure-resources zoals PostgreSQL, Data Factory, Da
 
 
 
-## Azure architecture
-    ...
+## Architecture
+![Main pipeline](img/architecture.png)
+
+
+## Azure ETL piplene
+![Main pipeline](img/main_piplene.png)
+    
+
 
 
 ## ETL piplene 
