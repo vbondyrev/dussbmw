@@ -43,24 +43,28 @@ De basis zal gebruikmaken van Azure-resources zoals PostgreSQL, Data Factory, Da
 
 ## ETL piplene 
 
-1. Data gathering. Parsing
-    Collect open-source references and parse data that can be useful for future analysis.
-    Raw data that we are going to analyze;
+1. Data gathering
+    Collect raw data from multiple sources, including AI-driven web scraping, open-source postcode/geospatial datasets, and open-source vehicle data.
+    Raw data that we are going to analyze or might be useful; 
 
 2. Data ingestion
-    Raw data is gathered from various sources and stored to Azure PostgresSQL service;
-    Utilize Azure Data Factory to save data from PostgresSQL DB to Bronze zone in .parquet format  
+    Ingest raw data from the various sources into Azure PostgreSQL;
+    Utilize Azure Data Factory to orchestrate the movement of data from PostgresSQL DB to Bronze zone in .parquet format  
 
-3. Data Preprocessing. Cleaning.
-    Deduplication; Data validation. Checking data types etc.
+3. Data preprocessing and cleaning
+    Deduplication;
+    Data validation;
+    Checking data types, etc.
 
-4. Data transformation.
-    Standatise colmn names; Add new calculation, combine of data etc.; 
-    Processing structured and cleaned data from Broze to Silver zone;
+4. Data transformation
+    Standatise colmn names for consistency across datasets; 
+    Add new calculation fileds, combine data etc.; 
+    Processing structured and cleaned datasets from Broze to Silver zone;
 
-5. Data loading to 
+5. Data loading and aggrigation 
     Procesing data from Silver to Gold zone;
-    Ready datasets for BI analysis; 
+    Synapse dinamicly create relavant views based on delta files in gold zone; 
+    Prepare datasets for analysis, utilizing Tableau BI. 
 
 
 
