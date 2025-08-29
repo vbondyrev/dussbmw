@@ -41,7 +41,7 @@ De basis zal gebruikmaken van Azure-resources zoals PostgreSQL, Data Factory, Da
 
 
 
-## ETL piplene 
+## ETL piplene description 
 
 1. Data gathering
     Collect raw data from multiple sources, including AI-driven web scraping, open-source postcode/geospatial datasets, and open-source vehicle data.
@@ -66,7 +66,12 @@ De basis zal gebruikmaken van Azure-resources zoals PostgreSQL, Data Factory, Da
     Synapse dinamicly create relavant views based on delta files in gold zone; 
     Prepare datasets for analysis, utilizing Tableau BI. 
 
+## Tableau dashboard
+Link to published dashboard
+https://public.tableau.com/app/profile/viktor.bondyrev/viz/Deinvloedvanconcurrenten/DussBMW?publish=yes
 
+
+![Main pipeline](img/tableau_dashboard.png)
 
 
 ## The list with open-source data:
